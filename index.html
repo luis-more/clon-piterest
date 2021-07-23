@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Pinterest</title>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-expand-sm navbar-expand-md navbar-expand-xs navbar-light ">
+    <div class="container-fluid me-auto">
+      <a class="navbar-brand"><img  class="logo" src="./img/logo1.svg" alt="logo"/></a>
+        
+      <div class=" navbar-collapse d-flex" id="navbarColor03">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Inicio</a>
+          </li>   
+
+          <li class="nav-item ">
+            <a class="nav-link dropdown-toggle"    aria-expanded="true">Hoy</a>
+                          
+          </li>
+          
+
+        </ul>
+        <form class="d-flex">
+          <input class="form-control navbar-expand" type="text" placeholder="Buscar">
+          <a class="navbar-brand"><img  class="logo" src="./img/campana.svg" alt="logo"/></a>
+          <a class="navbar-brand"><img  class="logo" src="./img/msn.svg" alt="logo"/></a>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  
+
+<div class="grid-container">
+
+    <img class="grid-item" src="http://lorempixel.com/220/220" alt=""/>
+    <img class="grid-item" src="http://lorempixel.com/220/200/" />
+    <img class="grid-item" src="http://lorempixel.com/220/300" alt=""/>
+    <img class="grid-item" src="http://lorempixel.com/220/620" alt=""/>
+    <img class="grid-item" src="http://lorempixel.com/220/200" alt=""/>
+    <img class="grid-item" src="http://lorempixel.com/220/300" alt=""/>
+    <img class="grid-item" src="http://lorempixel.com/220/500" alt=""/>
+    <img class="grid-item" src="http://lorempixel.com/220/620" alt=""/>
+    <img class="grid-item" src="http://lorempixel.com/220/400" alt=""/>
+    <img class="grid-item" src="http://lorempixel.com/220/300" alt=""/>
+    <img class="grid-item" src="http://lorempixel.com/220/150" alt=""/>
+    <img class="grid-item" src="http://lorempixel.com/220/620" alt=""/>
+    <img class="grid-item" src="http://lorempixel.com/220/400" alt=""/>
+    <img class="grid-item" src="http://lorempixel.com/220/200" /> 
+   
+    <img class="grid-item" src="http://lorempixel.com/400/200/"  />
+    <img class="grid-item" src="http://lorempixel.com/220/200" />   
+    <img class="grid-item" src="http://lorempixel.com/220/200/">  
+    <img class="grid-item" src="http://lorempixel.com/220/200/" >
+    <img class="grid-item" src="http://lorempixel.com/220/200/" >
+    <img class="grid-item" src="http://lorempixel.com/220/300" alt=""/>
+    <img class="grid-item" src="http://lorempixel.com/220/200" alt=""/>
+    <img class="grid-item" src="http://lorempixel.com/220/300" alt=""/>
+    <img class="grid-item" src="http://lorempixel.com/220/500" alt=""/>
+    <img class="grid-item" src="http://lorempixel.com/220/620" alt=""/>
+    <img class="grid-item" src="http://lorempixel.com/220/400" alt=""/>
+    <img class="grid-item" src="http://lorempixel.com/220/300" alt=""/>
+    <img class="grid-item" src="http://lorempixel.com/220/200" alt=""/>
+    <img class="grid-item" src="http://lorempixel.com/220/620" alt=""/>
+    <img class="grid-item" src="http://lorempixel.com/220/400" alt=""/>
+    <img class="grid-item" src="http://lorempixel.com/220/200" /> 
+  </div> 
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+<script>
+  var elem = document.querySelector('.grid-container');
+     var msnry = new Masonry( elem, {
+  // options
+  itemSelector: '.grid-item',
+  columnWidth: 230,
+  gutter: 20,
+  isFitWidth:true,
+  } );
+  </script>
+</body>
+</html>
